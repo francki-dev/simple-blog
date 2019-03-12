@@ -1,15 +1,3 @@
 <ul class="list-group">
-  <li *ngFor="let post of posts" class="list-group-item" ngClass="{{loveIt > 0}}">
-    <div class="header">
-      <div>{{ post.title }}</div>
-      <div>{{ post.createdAt | date: 'M/d/yy, h:mm a' }}</div>
-    </div>
-    <div class="body">
-      <p>{{ post.content }}</p>
-    </div>
-    <div class="button">
-      <button class="btn btn-success" type="button">Love it</button>
-      <button class="btn btn-danger" type="button">Don't love it</button>
-    </div>
-  </li>
+  <app-post-list-item *ngFor="let post of posts" [post]="post" class="list-group-item"></app-post-list-item>
 </ul>
