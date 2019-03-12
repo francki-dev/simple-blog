@@ -63,6 +63,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/app/component/post-list-item/post-list-item.component.spec.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/app/component/post-list-item/post-list-item.component.ts">
           <value>
             <set />
