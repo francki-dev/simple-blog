@@ -6,6 +6,7 @@ import {Post} from '../../interface/post';
     templateUrl: './post-list-item.component.html',
     styleUrls: ['./post-list-item.component.css']
 })
+
 export class PostListItemComponent implements DoCheck {
 
     @Input() post: Post;
@@ -26,8 +27,10 @@ export class PostListItemComponent implements DoCheck {
     ngDoCheck(): void {
         if (this.post.loveIts > 0) {
             this.loveIt = 'list-group-item-success';
-        } else {
+        } else if (this.post.loveIts < 0) {
             this.loveIt = 'list-group-item-danger';
+        } else {
+            this.loveIt = '';
         }
     }
 }
