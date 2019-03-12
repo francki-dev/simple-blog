@@ -6,16 +6,16 @@ import {PostListComponent} from './component/post-list/post-list.component';
 import {PostListItemComponent} from './component/post-list-item/post-list-item.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PostListComponent,
-    PostListItemComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        PostListComponent,
+        PostListItemComponent
+    ],
+    imports: [
+        BrowserModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }

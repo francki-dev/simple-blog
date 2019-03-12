@@ -3,11 +3,10 @@ import {Post} from '../../interface/post';
 
 @Component({
   selector: 'app-post-list',
-  templateUrl: './post-list.component.html',
-  styleUrls: ['./post-list.component.css']
+    templateUrl: './post-list.component.html'
 })
 export class PostListComponent implements OnInit {
-  @Input() posts: [Post];
+    @Input() posts: Post[];
 
   constructor() {
   }

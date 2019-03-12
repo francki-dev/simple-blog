@@ -1,21 +1,21 @@
 .header > div:first-child {
-  font-size: 20px;
-  font-weight: bold;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .header > div {
-  display: inline-block;
-  margin-bottom: 15px;
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
 .header > div:last-child {
-  float: right;
+    float: right;
 }
 
 .body {
-  text-align: justify;
+    text-align: justify;
 }
 
 .button > .btn {
-  margin: 10px;
+    margin: 10px;
 }
