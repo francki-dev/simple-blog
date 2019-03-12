@@ -1,0 +1,13 @@
+<li [ngClass]="loveIt" class="list-group-item">
+    <div class="header">
+        <div>{{ post.title }}</div>
+        <div>{{ post.createdAt | date: 'M/d/yy, h:mm a' }}</div>
+    </div>
+    <div class="body">
+        <p>{{ post.content }}</p>
+    </div>
+    <div class="button">
+        <button (click)="incrementPost()" class="btn btn-success" type="button">Love it</button>
+        <button (click)="decrementPost()" class="btn btn-danger" type="button">Don't love it</button>
+    </div>
+</li>
